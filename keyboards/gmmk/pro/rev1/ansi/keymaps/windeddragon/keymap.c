@@ -74,14 +74,28 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 	static void set_rgb_caps_leds_on(void) {
 		// Set alpha and capslock to red
-
-		rgb_matrix_set_color( 3, 255, 0, 0);	// Caps
+		rgb_matrix_set_color( 3, 0, 255, 0);	// Caps
+        rgb_matrix_set_color(67, 0, 255, 0);	// Left LED 01
+		rgb_matrix_set_color(70, 0, 255, 0);	// Left LED 02
+		rgb_matrix_set_color(73, 0, 255, 0);	// Left LED 03
+		rgb_matrix_set_color(76, 0, 255, 0);	// Left LED 04
+		rgb_matrix_set_color(80, 0, 255, 0);	// Left LED 05
+		rgb_matrix_set_color(83, 0, 255, 0);	// Left LED 06
+		rgb_matrix_set_color(87, 0, 255, 0);	// Left LED 07
+		rgb_matrix_set_color(91, 0, 255, 0);	// Left LED 08
 	}
 
 	static void set_rgb_caps_leds_off(void) {
 		// Set alpha and capslock to black
-
 		rgb_matrix_set_color( 3, 0, 0, 0);	// Caps
+		rgb_matrix_set_color(67, 0, 0, 0);	// Left LED 01
+		rgb_matrix_set_color(70, 0, 0, 0);	// Left LED 02
+		rgb_matrix_set_color(73, 0, 0, 0);	// Left LED 03
+		rgb_matrix_set_color(76, 0, 0, 0);	// Left LED 04
+		rgb_matrix_set_color(80, 0, 0, 0);	// Left LED 05
+		rgb_matrix_set_color(83, 0, 0, 0);	// Left LED 06
+		rgb_matrix_set_color(87, 0, 0, 0);	// Left LED 07
+		rgb_matrix_set_color(91, 0, 0, 0);	// Left LED 08
 	}
 
 	static void set_rgb_scroll_leds_on(void) {
